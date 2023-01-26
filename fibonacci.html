@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Fibonacci</title>
+</head>
+
+<body>
+
+    <h3>Fibonacci Numbers</h3>
+
+    <p>Open console to view 100 Fibonacci numbers.</p>
+
+    <script type="text/javascript">
+        var f = [];
+        var n = 100;
+
+        f[0] = 0;
+        console.log("Fibonacci Series: " + f[0]);
+        
+        for (var i=1; i<=n; i++) {
+            if (i === 1) {
+                f[i] = 1;
+            }
+            else {
+                f[i] = f[i-1]+f[i-2];
+            }
+            console.log("Fibonacci Series: " + f[i]);
+        }
+    </script>
+</body>
+
+</html>

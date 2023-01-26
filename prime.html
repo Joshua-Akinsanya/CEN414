@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Prime Numbers</title>
+</head>
+
+<body>
+
+    <h3>Prime Numbers</h3>
+
+    <p>Open console to view prime numbers from 0 to 100.</p>
+    
+    <script type="text/javascript">
+        var n=100;
+
+        for(var i = 2; i<=100; i++) {
+            for(var j = 2; j<=(i/j); j++)
+            {
+                if(i%j === 0) {
+                    break;
+                }
+            }
+            if(j>(i/j)) {
+                console.log(i + " is prime.")
+            }
+        }
+    </script>
+</body>
+
+</html>
